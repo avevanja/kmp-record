@@ -140,6 +140,8 @@ internal actual object RecordCore {
             setOutputFormat(config.outputFormat.toMediaRecorderOutputFormat())
             setOutputFile(output)
             setAudioEncoder(config.audioEncoder.toMediaRecorderAudioEncoder())
+            setAudioSamplingRate(config.sampleRate)
+            setAudioEncodingBitRate(config.bitRate)
         }
 
     private fun checkPermission() {

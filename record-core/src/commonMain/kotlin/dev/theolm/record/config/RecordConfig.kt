@@ -15,6 +15,7 @@ public data class RecordConfig(
     val outputFormat: OutputFormat = OutputFormat.MPEG_4,
     val audioEncoder: AudioEncoder = AudioEncoder.AAC,
     val sampleRate: Int = 44100,
+    val bitRate: Int = 128000,
     val volumeCallback: VolumeCallback? = null
 )
 
